@@ -54,49 +54,49 @@
       <div class="col" style="background-color:lavender;">.col</div>
   </div>-->
 
-  <form>
+  <form action="adicionaPessoa" method="POST">
     <div class="row">
       
       
       <div class="col-sm-4">
         <div class="form-group">
           <label for="nmPessoaFisica">Nome:</label>
-          <input type="text" class="form-control" id="nmPessoaFisica">
+          <input type="text" class="form-control" id="nmPessoaFisica" name="nmPessoaFisica">
         </div>
       </div>
 
       <div class="col-sm-4">   
         <div class="form-group">
             <label for="dtNascimento">Nascimento:</label>
-            <input type="date" class="form-control" id="dtNascimento">
+            <input type="date" class="form-control" id="dtNascimento" name="dtNascimento">
         </div>      
       </div>
 
       <div class="col-sm-4">   
           <div class="form-group">
               <label for="cpf">CPF:</label>
-              <input type="text" class="form-control" id="cpf">
+              <input type="text" class="form-control" id="cpf" name="cpf">
           </div>      
       </div>
 
       <div class="col-sm-4">   
           <div class="form-group">
               <label for="rg">RG:</label>
-              <input type="text" class="form-control" id="rg">
+              <input type="text" class="form-control" id="rg" name="rg">
           </div>      
       </div>
 
       <div class="col-sm-4">   
           <div class="form-group">
               <label for="celular">Celular:</label>
-              <input type="number" class="form-control" id="celular">
+              <input type="number" class="form-control" id="celular" name="celular">
           </div>      
       </div>
 
       <div class="col-sm-4">   
           <div class="form-group">
               <label for="email">E-mail:</label>
-              <input type="email" class="form-control" id="email">
+              <input type="email" class="form-control" id="email" name="email">
           </div>      
       </div>
 
