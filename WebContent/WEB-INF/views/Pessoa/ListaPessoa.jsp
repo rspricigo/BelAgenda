@@ -62,8 +62,8 @@
                 <tbody>
 <c:forEach items="${pessoas}" var="pessoa">
 <tr data-dismiss="modal">
-<td>${pessoa.nmPessoaFisica}</td>
 <td>${pessoa.idPessoaFisica}</td>
+<td>${pessoa.nmPessoaFisica}</td>
 </tr>
 
 </c:forEach>
