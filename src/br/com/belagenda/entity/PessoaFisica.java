@@ -23,7 +23,7 @@ public class PessoaFisica {
 	
 	private String rg;
 	
-	private int celular;
+	private String celular;
 	
 	private String email;
 
@@ -67,11 +67,11 @@ public class PessoaFisica {
 		this.rg = rg;
 	}
 
-	public int getCelular() {
+	public String getCelular() {
 		return celular;
 	}
 
-	public void setCelular(int celular) {
+	public void setCelular(String celular) {
 		this.celular = celular;
 	}
 
