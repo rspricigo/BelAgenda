@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class AgendamentoController {
 
-	@RequestMapping("/Agenda")
+	@RequestMapping("/Agendamento")
 	public String execute() {
-		return "/Agenda/Agenda";
+		return "/Agendamento/Agendamento";
 	}
 	
 }
