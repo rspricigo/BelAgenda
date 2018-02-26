@@ -56,24 +56,17 @@
                 <thead>
                   <tr>
                     <th>Codigo</th>
-                    <th>Nome</th>
-                    <th>Data Nascimento</th>
-                    <th>CPF</th>
-                    <th>RG</th>
-                    <th>Celular</th>
-                    <th>Email</th>
+                    <th>Descrição</th>
+                    <th>Profissional</th>
+                    
                   </tr>
                 </thead>
                 <tbody>
-<c:forEach items="${pessoas}" var="pessoa">
+<c:forEach items="${agendas}" var="agenda">
 <tr>
-<td>${pessoa.idPessoaFisica}</td>
-<td>${pessoa.nmPessoaFisica}</td>
-<td>${pessoa.dtNascimento}</td>
-<td>${pessoa.cpf}</td>
-<td>${pessoa.rg}</td>
-<td>${pessoa.celular}</td>
-<td>${pessoa.email}</td>
+<td>${agenda.idAgenda}</td>
+<td>${agenda.nmAgenda}</td>
+<td>${agenda.idPessoa.nmPessoaFisica}</td>
 </tr>
 
 </c:forEach>

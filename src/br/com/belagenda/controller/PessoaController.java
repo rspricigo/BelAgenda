@@ -42,7 +42,7 @@ public class PessoaController {
 	public ModelAndView listaPorNome(String nm_pessoa) {
 		PessoaFisicaDAO dao = new PessoaFisicaDAO();
 		List<PessoaFisica> pessoas = dao.getListPorNome(nm_pessoa);
-		ModelAndView mv = new ModelAndView("Pessoa/ListaPessoa");
+		ModelAndView mv = new ModelAndView("Pessoa/ListaPessoaTable");
 		mv.addObject("pessoas",pessoas);
 	    return mv;
 	}

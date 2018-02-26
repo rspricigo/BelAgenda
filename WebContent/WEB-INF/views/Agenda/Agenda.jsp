@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>Agenda Salão</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -56,33 +56,29 @@
   
 
 
-  <form>
+  <form action="adicionaAgenda" method="POST">
 
     <input type="hidden" id="idPessoa" name="idPessoa">
     <div class="row">
         
-        <div class="col-sm-2">
-            <div class="form-group">
-              <label for="idAgenda">Codigo:</label>
-              <input type="number" class="form-control" name="idAgenda" id="idAgenda">
-            </div>
-          </div>
+        
           
           
-          <div class="col-sm-5">
+          <div class="col-sm-6">
             <div class="form-group">
               <label for="nmAgenda">Nome:</label>
               <input type="text" class="form-control" name="nmAgenda" id="nmAgenda" >
             </div>
           </div>
 
-          <div class="col-sm-5">   
+          <div class="col-sm-6">   
             <div class="form-group">
               <label for="nmPessoaFisica">Profissional:</label>
-              <input type="text" class="form-control" name="nmPessoaFisica" id="nmPessoaFisica" data-toggle="modal" data-target="#myModal">
+              <input type="text" class="form-control"  id="nmPessoaFisica" data-toggle="modal" data-target="#myModal">
             </div>      
           </div>
     </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 
  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
@@ -91,7 +87,7 @@
   
   <!-- The Modal -->
     <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
   
           <!-- Modal Header -->
