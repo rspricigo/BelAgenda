@@ -33,9 +33,10 @@ public List<PessoaFisica> getListPorNome(String nome) {
 		TypedQuery<PessoaFisica> tp = em.createQuery(	query.select(from).where(
 				predicate = cb.and(predicate, 
 		        cb.like(from.<String>get("nmPessoaFisica"), "%"+nome+"%"))));
+		System.out.println(tp.toString());
 		List<PessoaFisica> lista = tp.getResultList();
 		for(PessoaFisica p : lista) {
-			System.out.println(p.getNmPessoaFisica());
+			System.out.println(p.getNmPessoaFisica()+" "+nome);
 		}
 		return lista;		
 	   }

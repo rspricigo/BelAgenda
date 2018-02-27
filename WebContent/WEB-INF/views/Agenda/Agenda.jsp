@@ -111,20 +111,24 @@
                 
                 <div class="row">
                   
-                    <div class="col-sm-6">
+                    <div class="col-sm-9">
                         <div class="form-group">
                           <label for="nmPessoa">Nome:</label>
-                          <input type="text" class="form-control" name="nmPessoa" id="nmPessoa" onkeypress="buscaProfissional()">
+                          <input type="text" class="form-control" name="nmPessoa" id="nmPessoa" oninput="buscaProfissional()">
                         </div>
                     </div>
+
+                    
+                        
   
-                  
+                
                 </div>
-                <button type="button" class="btn btn-primary">Localizar</button>
+                <!-- <button type="button" class="btn btn-primary">Localizar</button> -->
               </form>
             </div>
                 
             <div class="container">
+              <div class="table-responsive">
               <table id="pessoaAgenda" class="table">
                 
                 <thead>
@@ -132,13 +136,11 @@
                     <th>Codigo</th>
                     <th>Nome</th>
                     <th>Data Nascimento</th>
-                    <th>CPF</th>
-                    <th>RG</th>
                     <th>Celular</th>
-                    <th>Email</th>
                   </tr>
                 </thead>
               </table>
+            </div>
             </div>
           </div>
   
