@@ -74,6 +74,13 @@
 <td>${pessoa.rg}</td>
 <td>${pessoa.celular}</td>
 <td>${pessoa.email}</td>
+<td>
+	<form action="editaPessoa" method="POST">
+	<input type="hidden" name="id" value="${pessoa.idPessoaFisica}">
+	<button type="submit" value="Editar">Editar</button>
+	</form>
+
+</td>
 </tr>
 
 </c:forEach>
